@@ -1,26 +1,28 @@
-.flight-detail-container {
-    background-color: #f9f9f9;
+
+  .flight-detail-container {
     border: 1px solid #ddd;
-    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   .flight-detail-heading {
     font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
   }
-  
+
   .flight-detail-item {
     margin-bottom: 10px;
   }
-  
+
   .detail-label {
     font-weight: bold;
+    color: #666;
   }
-  
+
   .detail-value {
-    margin-left: 10px;
+    color: #333;
   }
-  
+

@@ -1,0 +1,115 @@
+/* Table Container */
+.flight-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  /* Table */
+  .flight-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box; /* Add border-box */
+  }
+  
+  /* Table Header */
+  .flight-table th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  /* Table Body */
+  .flight-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Table Row Hover */
+  .flight-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Loader */
+  .flight-list-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flight-loader-item {
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: loader 1.2s infinite ease-in-out;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Status Class */
+  .delayed {
+    background-color: #be160d;
+  }
+  
+  .boarded {
+    background-color: #ffc107;
+  }
+  
+  .ontime {
+    background-color: #28a745;
+  }
+  .departed {
+    background-color: #007bff;
+  }
+  
+  /* Link */
+  .flight-link {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .flight-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Table Body */
+  .flight-table tbody {
+    /* position: relative; */
+  }
+  
+  /* Loader */
+  .flight-list-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .flight-table td.status1 {
+    padding: 8px 16px;
+    /* background-color: #4caf50; */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .flight-table td.status1:hover {
+    /* background-color: #45a049; */
+  }
