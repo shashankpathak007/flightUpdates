@@ -12,7 +12,11 @@ const App = () => {
     <Router>
       <div>
         <h1>Flight Status Board</h1>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={  <div className="flight-list-loader">
+              <div className="flight-loader-item"></div>
+              <div className="flight-loader-item"></div>
+              <div className="flight-loader-item"></div>
+            </div>}>
           <Routes>
             <Route path="/" element={<FlightTable />} />
             <Route path="/flight/:id" element={<FlightDetail />} />
