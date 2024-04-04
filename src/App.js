@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const Home = lazy(() => import('./pages/home/Home'));
 
 // Lazy load FlightDetail component
-const FlightDetail = lazy(() => import('./components/FlightDetail'));
+const FlightDetail = lazy(() => import('./components/Details/FlightDetail'));
 
 const App = () => {
   return (

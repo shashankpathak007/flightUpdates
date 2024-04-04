@@ -1,5 +1,5 @@
 import React from "react";
-import FlightTable from "../../components/FlightTable"
+import FlightTable from "../../components/FlightList/FlightTable"
 
 const home =()=>{
 
