@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Lazy load FlightTable component
-const FlightTable = lazy(() => import('./components/FlightTable'));
+const Home = lazy(() => import('./pages/home/Home'));
 
 // Lazy load FlightDetail component
 const FlightDetail = lazy(() => import('./components/FlightDetail'));
@@ -18,7 +18,7 @@ const App = () => {
               <div className="flight-loader-item"></div>
             </div>}>
           <Routes>
-            <Route path="/" element={<FlightTable />} />
+            <Route path="/" element={<Home />} />
             <Route path="/flight/:id" element={<FlightDetail />} />
           </Routes>
         </Suspense>
