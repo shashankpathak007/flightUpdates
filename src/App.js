@@ -1,30 +1,25 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LinkedInLogin from './LinkedInLogin';
+import LinkedInRedirect from './LinkedInRedirect';
 
-// Lazy load FlightTable component
-const Home = lazy(() => import('./pages/home/Home'));
-
-// Lazy load FlightDetail component
-const FlightDetail = lazy(() => import('./components/Details/FlightDetail'));
-
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div>
-        <h1>Flight Status Board</h1>
-        <Suspense fallback={  <div className="flight-list-loader">
-              <div className="flight-loader-item"></div>
-              <div className="flight-loader-item"></div>
-              <div className="flight-loader-item"></div>
-            </div>}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/flight/:id" element={<FlightDetail />} />
-          </Routes>
-        </Suspense>
-      </div>
+    <div className="App">
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      
+      </header> */}
+      <Router>
+      <Routes>
+        <Route path="/" element={<LinkedInLogin />} />
+        <Route path="/linkedin" element={<LinkedInRedirect />} />
+      </Routes>
     </Router>
+    </div>
   );
-};
+}
 
 export default App;
