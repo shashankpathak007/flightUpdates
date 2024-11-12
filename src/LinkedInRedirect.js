@@ -15,7 +15,7 @@ const LinkedInRedirect = () => {
     try {
       const clientId = '86b4nsnbi0oetm';
       const clientSecret = 'WPL_AP1.p3NYkVGMUXq8L2La.KKXFGQ==';
-      const redirectUri = 'https://flight-updates.vercel.app/linkedin`';
+      const redirectUri = 'https://flight-updates.vercel.app/linkedin';
 
       const response = await axios.post(
         'https://www.linkedin.com/oauth/v2/accessToken',
