@@ -2,7 +2,7 @@ import React from 'react';
 
 const LinkedInLogin = () => {
   const handleLogin = () => {
-    const clientId = '86b4nsnbi0oetm';
+    const clientId = 'code';
     const redirectUri = 'https://flight-updates.vercel.app/linkedin';
     const state = Math.random(); // Use a unique string to prevent CSRF
     const scope = 'profile'; // Permissions you need

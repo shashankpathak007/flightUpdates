@@ -13,8 +13,8 @@ const LinkedInRedirect = () => {
 
   const getAccessToken = async (code) => {
     try {
-      const clientId = '86b4nsnbi0oetm';
-      const clientSecret = 'WPL_AP1.p3NYkVGMUXq8L2La.KKXFGQ==';
+      const clientId = 'code';
+      const clientSecret = 'code';
       const redirectUri = 'https://flight-updates.vercel.app/linkedin';
 
       const response = await axios.post(
