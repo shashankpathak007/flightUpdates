@@ -5,17 +5,17 @@ const LinkedInRedirect = () => {
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
-
+console.log(code,"code")
     if (code) {
-      getAccessToken(code);
+    //   getAccessToken(code);
     }
   }, []);
 
   const getAccessToken = async (code) => {
     try {
-      const clientId = 'code';
-      const clientSecret = 'code';
-      const redirectUri = 'https://flight-updates.vercel.app/linkedin';
+      const clientId = '86b4nsnbi0oetm';
+      const clientSecret = 'WPL_AP1.p3NYkVGMUXq8L2La.KKXFGQ==';
+      const redirectUri = 'http://localhost:3000/linkedin';
 
       const response = await axios.post(
         'https://www.linkedin.com/oauth/v2/accessToken',
