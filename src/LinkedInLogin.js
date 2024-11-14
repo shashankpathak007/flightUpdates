@@ -21,7 +21,7 @@ let a =`https://www.linkedin.com/oauth/v2/authorization?response_type=code&clien
 
   return <>
     <LinkedinSDK
-    clientId="86b4nsnbi0oetm"
+    clientId="code"
     callBack={responseLinkedin}
     fields=":(id,num-connections,picture-url)"
     className={'className'}
@@ -31,7 +31,7 @@ let a =`https://www.linkedin.com/oauth/v2/authorization?response_type=code&clien
     icon={"S"}
     getOAuthToken
   />
-  <LinkedInProfile accessToken={'AQU4_nmozAn41yvLfcH6lgUAs0VaDBC9pzWLZtqb1HHMXQCBopCsQfQa582m4ioBAVQ5kbyHWiaVxBS2rcStO3D91xWmiEeTgcTYWs2b8xTO7QBFs9uxP5H6cWSuK-2bddGKKeYxoAntyMJlQP9cN3acYBKC5PdE-hTfdtfj-Xxd2kQsiEK5GG9RQ-E9OevJn6-6WiQ5CGQdl-ZfsvDE6JiNKwYyP0iJ3zts3T_XM_fR_Q1wjTA_L3ZO9B6LfDGkeKw8eh_VczMRVnewjpEtbDoRLGAS6rK51GhD4MmhovuI5RLZMs7-RVdET7Bkyd-rlx9TlkCDI_W-07OKhOnHLcI5Wc00GQ'}/>
+  <LinkedInProfile accessToken={'code'}/>
   <button onClick={handleLogin}>Login with LinkedIn</button></>;
 }
 
