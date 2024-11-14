@@ -13,8 +13,8 @@ console.log(code,"code")
 
   const getAccessToken = async (code) => {
     try {
-      const clientId = '86b4nsnbi0oetm';
-      const clientSecret = 'WPL_AP1.p3NYkVGMUXq8L2La.KKXFGQ==';
+      const clientId = 'code';
+      const clientSecret = 'code';
       const redirectUri = 'http://localhost:3000/linkedin';
 
       const response = await axios.post(
